@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Excuse Generator</title>
+    <title>Random Logline Generator</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -11,11 +12,52 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <div class="words container-fluid text-center mt-5">
-      <p id="excuse">My dog ate my homework</p>
-      <button id="printIt" type="button" class="btn btn-warning">Shoot!</button>
+    <div class="words container-fluid text-center mt-5 w-75">
+      <div class="row">
+        <div class="col">
+          <h3>Fade in:</h3>
+        </div>
+
+        <div class="col-12 my-5">
+          <h1 id="logline">Press to start</h1>
+        </div>
+        <div class="col">
+          <h3 id="out">Cut to:</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 mt-3">
+          <button id="printIt" type="button" class="btn btn-warning ">
+            Shoot!
+          </button>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 w-25">
+          <select name="flaw" id="inputState" class="form-control required">
+            <option value="" selected>Pick a flawtype</option>
+            <option value="1">Relational</option>
+            <option value="2">Intelligence</option>
+            <option value="3">Appearance</option>
+            <option value="4">Character</option>
+            <option value="5">Work</option>
+            <option value="6">Millenial</option>
+          </select>
+          <small class="invalid-feedback" id="stateFeedback"></small>
+        </div>
+        <div class="col-12">
+          <ul id="logList" class="list-group list-group-flush mt-4"></ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>

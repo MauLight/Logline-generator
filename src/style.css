@@ -1,1 +1,15 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+h1 {
+  font-family: "Courier Prime", monospace;
+}
+
+h3 {
+  float: left;
+  font-family: "Courier Prime", monospace;
+}
+
+#out {
+  float: right;
+  font-family: "Courier Prime", monospace;
+}
