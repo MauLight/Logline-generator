@@ -268,6 +268,7 @@ document.querySelector("#printIt").addEventListener("click", () => {
     )} wants ${Boring(wants)} and faces opposition from ${Boring(
       against
     )} to learn that ${Boring(toLearn)}.`;
+    logList.innerHTML += `<li class="list-group-item">${logEl.innerHTML}</li>`;
   } else {
     logEl.innerHTML = `Did you choose a Flawtype?`;
   }
