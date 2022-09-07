@@ -269,6 +269,6 @@ document.querySelector("#printIt").addEventListener("click", () => {
       against
     )} to learn that ${Boring(toLearn)}.`;
   } else {
-    logEl.innerHTML = "Press to start";
+    logEl.innerHTML = `Did you choose Flawtype?`;
   }
 });
